@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <!-- Font for Bengali Text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -27,9 +30,12 @@
                 </div>
             </div>
             <div class="header-actions">
-                <button class="btn btn-outline" id="btn_lang"><i class="fa-solid fa-globe"></i> <span id="lang_text">ENGLISH</span></button>
-                <button class="btn btn-outline" id="btn_currency"><i class="fa-solid fa-money-bill-wave"></i> <span id="currency_text">DOLLAR</span></button>
-                <button class="btn btn-icon theme-toggle" id="btn_theme"><i class="fa-solid fa-moon" id="theme_icon"></i></button>
+                <button class="btn btn-outline" id="btn_lang"><i class="fa-solid fa-globe"></i> <span
+                        id="lang_text">ENGLISH</span></button>
+                <button class="btn btn-outline" id="btn_currency"><i class="fa-solid fa-money-bill-wave"></i> <span
+                        id="currency_text">DOLLAR</span></button>
+                <button class="btn btn-icon theme-toggle" id="btn_theme"><i class="fa-solid fa-moon"
+                        id="theme_icon"></i></button>
             </div>
         </header>
 
@@ -42,18 +48,30 @@
             <div class="form-group">
                 <label data-i18n="loan_purpose_lbl">ঋণ কেন নিচ্ছেন?</label>
                 <div class="purpose-grid" id="purpose_grid">
-                    <button class="purpose-btn active" data-purpose="market"><i class="fa-solid fa-basket-shopping"></i> <span data-i18n="p_market">বাজার</span></button>
-                    <button class="purpose-btn" data-purpose="education"><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="p_education">শিক্ষা</span></button>
-                    <button class="purpose-btn" data-purpose="medical"><i class="fa-solid fa-stethoscope"></i> <span data-i18n="p_medical">চিকিৎসা</span></button>
-                    <button class="purpose-btn" data-purpose="emergency"><i class="fa-solid fa-bolt"></i> <span data-i18n="p_emergency">জরুরী</span></button>
-                    <button class="purpose-btn" data-purpose="business"><i class="fa-solid fa-shop"></i> <span data-i18n="p_business">ব্যবসা</span></button>
-                    <button class="purpose-btn" data-purpose="agriculture"><i class="fa-solid fa-tractor"></i> <span data-i18n="p_agriculture">কৃষি</span></button>
-                    <button class="purpose-btn" data-purpose="social"><i class="fa-solid fa-heart"></i> <span data-i18n="p_social">সামাজিক</span></button>
-                    <button class="purpose-btn" data-purpose="event"><i class="fa-solid fa-cake-candles"></i> <span data-i18n="p_event">বিয়ে/অনুষ্ঠান</span></button>
-                    <button class="purpose-btn" data-purpose="travel"><i class="fa-solid fa-plane"></i> <span data-i18n="p_travel">ভ্রমণ</span></button>
-                    <button class="purpose-btn" data-purpose="repair"><i class="fa-solid fa-hammer"></i> <span data-i18n="p_repair">মেরামত</span></button>
-                    <button class="purpose-btn" data-purpose="pay_debt"><i class="fa-solid fa-money-bill-transfer"></i> <span data-i18n="p_pay_debt">পুরোনো ঋণ</span></button>
-                    <button class="purpose-btn" data-purpose="other"><i class="fa-solid fa-ellipsis"></i> <span data-i18n="p_other">অন্যান্য</span></button>
+                    <button class="purpose-btn active" data-purpose="market"><i class="fa-solid fa-basket-shopping"></i>
+                        <span data-i18n="p_market">বাজার</span></button>
+                    <button class="purpose-btn" data-purpose="education"><i class="fa-solid fa-graduation-cap"></i>
+                        <span data-i18n="p_education">শিক্ষা</span></button>
+                    <button class="purpose-btn" data-purpose="medical"><i class="fa-solid fa-stethoscope"></i> <span
+                            data-i18n="p_medical">চিকিৎসা</span></button>
+                    <button class="purpose-btn" data-purpose="emergency"><i class="fa-solid fa-bolt"></i> <span
+                            data-i18n="p_emergency">জরুরী</span></button>
+                    <button class="purpose-btn" data-purpose="business"><i class="fa-solid fa-shop"></i> <span
+                            data-i18n="p_business">ব্যবসা</span></button>
+                    <button class="purpose-btn" data-purpose="agriculture"><i class="fa-solid fa-tractor"></i> <span
+                            data-i18n="p_agriculture">কৃষি</span></button>
+                    <button class="purpose-btn" data-purpose="social"><i class="fa-solid fa-heart"></i> <span
+                            data-i18n="p_social">সামাজিক</span></button>
+                    <button class="purpose-btn" data-purpose="event"><i class="fa-solid fa-cake-candles"></i> <span
+                            data-i18n="p_event">বিয়ে/অনুষ্ঠান</span></button>
+                    <button class="purpose-btn" data-purpose="travel"><i class="fa-solid fa-plane"></i> <span
+                            data-i18n="p_travel">ভ্রমণ</span></button>
+                    <button class="purpose-btn" data-purpose="repair"><i class="fa-solid fa-hammer"></i> <span
+                            data-i18n="p_repair">মেরামত</span></button>
+                    <button class="purpose-btn" data-purpose="pay_debt"><i class="fa-solid fa-money-bill-transfer"></i>
+                        <span data-i18n="p_pay_debt">পুরোনো ঋণ</span></button>
+                    <button class="purpose-btn" data-purpose="other"><i class="fa-solid fa-ellipsis"></i> <span
+                            data-i18n="p_other">অন্যান্য</span></button>
                 </div>
             </div>
 
@@ -68,7 +86,8 @@
                 </div>
                 <div class="advice-text">
                     <strong data-i18n="our_advice">আমাদের পরামর্শ</strong>
-                    <p id="purpose_advice_text" data-i18n="adv_market">অবশ্যই প্রয়োজন: এটি জীবন রক্ষা বা ভবিষ্যতের জন্য। কিস্তি ম্যানেজ করার চেষ্টা করুন।</p>
+                    <p id="purpose_advice_text" data-i18n="adv_market">অবশ্যই প্রয়োজন: এটি জীবন রক্ষা বা ভবিষ্যতের জন্য।
+                        কিস্তি ম্যানেজ করার চেষ্টা করুন।</p>
                 </div>
             </div>
 
@@ -116,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Result Cards -->
             <div class="results-grid">
                 <!-- Card 1 -->
@@ -128,13 +147,15 @@
                     <div class="result-value">
                         <span id="total_repayment_display">৳34,500</span>
                     </div>
-                    <div class="result-subtext" id="installment_frequency_text" data-i18n="total_repayment_full">সম্পূর্ণ পরিশোধ</div>
+                    <div class="result-subtext" id="installment_frequency_text" data-i18n="total_repayment_full">
+                        সম্পূর্ণ পরিশোধ</div>
 
                     <div class="daily-loss-box">
                         <i class="fa-solid fa-basket-shopping text-red"></i>
                         <div>
                             <span class="loss-label" data-i18n="daily_loss_lbl">দৈনিক বাজারের ক্ষতি</span>
-                            <span class="loss-value" id="daily_loss">৳108</span> <span class="loss-label-inline" data-i18n="daily">প্রতিদিন</span>
+                            <span class="loss-value" id="daily_loss">৳108</span> <span class="loss-label-inline"
+                                data-i18n="daily">প্রতিদিন</span>
                         </div>
                     </div>
                 </div>
@@ -151,7 +172,8 @@
                         <div class="progress-bar-container mini">
                             <div class="progress-bar bg-green" id="ngo_progress" style="width: 22%;"></div>
                         </div>
-                        <div class="ngo-ratio-text"><span data-i18n="ngo_takes">এনজিও কিস্তি নেয় আয়ের</span> <span id="ngo_ratio_text">22%</span></div>
+                        <div class="ngo-ratio-text"><span data-i18n="ngo_takes">এনজিও কিস্তি নেয় আয়ের</span> <span
+                                id="ngo_ratio_text">22%</span></div>
                     </div>
                 </div>
             </div>
@@ -160,11 +182,13 @@
         <!-- Advice Box -->
         <div class="advice-box warning" id="warning_advice_box">
             <div class="advice-title">
-                <i class="fa-solid fa-circle-info"></i> <span data-i18n="market_advice_title">বাজার ও কিস্তি পরামর্শ</span>
+                <i class="fa-solid fa-circle-info"></i> <span data-i18n="market_advice_title">বাজার ও কিস্তি
+                    পরামর্শ</span>
             </div>
             <div class="advice-content">
-                <i class="fa-solid fa-circle-exclamation text-orange"></i> 
-                <span data-i18n="market_advice_content">নিত্যপণ্যের দাম সাধারণত বাড়ে। ১০% দাম বাড়লে আপনি কি সামলাতে পারবেন?</span>
+                <i class="fa-solid fa-circle-exclamation text-orange"></i>
+                <span data-i18n="market_advice_content">নিত্যপণ্যের দাম সাধারণত বাড়ে। ১০% দাম বাড়লে আপনি কি সামলাতে
+                    পারবেন?</span>
             </div>
         </div>
 
@@ -188,11 +212,28 @@
         <!-- Hidden Calc Box -->
         <div class="hidden-calc-box" id="hidden_calc_box">
             <div class="hidden-calc-header">
-                <div><i class="fa-solid fa-arrow-trend-up"></i> <span data-i18n="hidden_calc">লুকানো হিসাব (মুদ্রাস্ফীতি)</span></div>
-                <div class="text-sm"><i class="fa-solid fa-chevron-down" id="hidden_calc_icon"></i> <span data-i18n="hidden_calc_sub">মুদ্রাস্ফীতির হিসাব দেখুন</span></div>
+                <div><i class="fa-solid fa-arrow-trend-up"></i> <span data-i18n="hidden_calc">লুকানো হিসাব
+                        (মুদ্রাস্ফীতি)</span></div>
+                <div class="text-sm"><i class="fa-solid fa-chevron-down" id="hidden_calc_icon"></i> <span
+                        data-i18n="hidden_calc_sub">মুদ্রাস্ফীতির হিসাব দেখুন</span></div>
             </div>
             <div class="hidden-calc-content" id="hidden_calc_content" style="display: none;">
-                <p data-i18n="hidden_calc_content">মুদ্রাস্ফীতির কারণে আপনার ঋণের আসল বোঝা কতটুকু কমছে। সাধারণ ৩-৫% মুদ্রাস্ফীতি থাকলে আপনার আসল ঋণের মান সময়ের সাথে কমে যায়, কিন্তু এনজিও সাধারণত বেশি সুদ নেয় যা এটি পুষিয়ে দেয়।</p>
+                <p data-i18n="hidden_calc_content">মুদ্রাস্ফীতির কারণে আপনার ঋণের আসল বোঝা কতটুকু কমছে। সাধারণ ৩-৫%
+                    মুদ্রাস্ফীতি থাকলে আপনার আসল ঋণের মান সময়ের সাথে কমে যায়, কিন্তু এনজিও সাধারণত বেশি সুদ নেয় যা এটি
+                    পুষিয়ে দেয়।</p>
+                <div class="inflation-details mt-3">
+                    <h4 data-i18n="inf_fixed_title" class="text-orange mb-1"><i class="fa-solid fa-user-tie"></i>
+                        নির্দিষ্ট আয়ের চাকরিজীবী:</h4>
+                    <p data-i18n="inf_fixed_desc" class="mb-2">চাকরিজীবীদের জন্য মুদ্রাস্ফীতি সবচেয়ে ক্ষতিকর।
+                        জিনিসপত্রের দাম প্রতিদিন বাড়ে, কিন্তু বেতন বাড়ে বছরে একবার ও বাড়ে না। ফলে কিস্তির টাকা পাহাড়
+                        সমান মনে হয় এবং দৈনন্দিন বাজার খরচ চালানো অসম্ভব হয়ে পড়ে।</p>
+
+                    <h4 data-i18n="inf_biz_title" class="text-green mb-1"><i class="fa-solid fa-shop"></i> ব্যবসায়ী:
+                    </h4>
+                    <p data-i18n="inf_biz_desc">ব্যবসায়ীরা মুদ্রাস্ফীতির সময় পণ্যের দাম বাড়িয়ে কিছুটা লাভবান হতে পারেন।
+                        তবে ক্রেতার ক্রয়ক্ষমতা কমে গেলে ব্যবসাও ক্ষতির মুখে পড়ে। তাই ঋণের টাকায় ব্যবসা করতে হলে নিশ্চিত
+                        হতে হবে মুনাফার হার কিস্তির চেয়ে বেশি।</p>
+                </div>
             </div>
         </div>
 
@@ -200,4 +241,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

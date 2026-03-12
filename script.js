@@ -23,18 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
             risk_level: "ঝুঁকির মাত্রা",
             our_advice: "আমাদের পরামর্শ",
             
-            adv_market: "অবশ্যই প্রয়োজন: এটি জীবন রক্ষা বা ভবিষ্যতের জন্য। কিস্তি ম্যানেজ করার চেষ্টা করুন।",
-            adv_agriculture: "আয়বর্ধক: কৃষি কাজে ঝুঁকি থাকে। ফসল বা খামারের আয়ের সাথে কিস্তির মিল রাখুন।",
-            adv_education: "দীর্ঘমেয়াদী বিনিয়োগ: শিক্ষার জন্য ঋণ ভালো, তবে কিস্তি যেন পড়াশোনার খরচ না কমায়।",
-            adv_medical: "অত্যন্ত জরুরী: চিকিৎসার বিকল্প নেই, তবে দ্রুত সুস্থ হয়ে আয়ের দিকে নজর দিন।",
-            adv_emergency: "জরুরী অবস্থা: কিস্তি পরিশোধের জন্য বিকল্প আয়ের উৎস ভেবে রাখুন।",
-            adv_business: "আয়বর্ধক: ব্যবসার আয় কিস্তির চেয়ে বেশি হলে এটি ভালো সিদ্ধান্ত।",
-            adv_event: "ঝুঁকিপূর্ণ: অনুৎপাদনশীল খাতে ঋণ নেওয়া বিপদের কারণ হতে পারে। আয় না বাড়লে কিস্তি দেওয়া কঠিন।",
-            adv_travel: "বিপজ্জনক: ভ্রমণ একটি বিলাসবহুল ব্যয়। ঋণ করে ভ্রমণ করা আর্থিক ভবিষ্যৎ নষ্ট করতে পারে।",
-            adv_social: "ঝুঁকিপূর্ণ: সামাজিক সম্মান রক্ষার্থে ঋণ নিলে কিস্তি দেওয়া কঠিন হতে পারে।",
-            adv_repair: "প্রয়োজনীয়: ঘর বা ব্যবসা মেরামতে ঋণ আয়ের নিরাপত্তা দেয়।",
-            adv_pay_debt: "বিপজ্জনক: এক ঋণ শোধ করতে আরেক ঋণ নিলে ঋণের ফাঁদে পড়ার সম্ভাবনা বেশি।",
-            adv_other: "সতর্কতা: অজানা খাতে ঋণ অনেক ঝুঁকিপূর্ণ হতে পারে। নিশ্চিত করুন এর আয় কিস্তির চেয়ে বেশি হবে।",
+            adv_market: "উচ্চ ঝুঁকি (৮০%): প্রতিদিনের খাবারের জন্য কিস্তিতে ঋণ নেওয়া একটি বড় বিপদের লক্ষণ। আপনার দৈনন্দিন আয়ের চেয়ে ব্যয় বেশি হচ্ছে। এই ঋণ শোধ করতে গিয়ে ভবিষ্যতে খাবারের উপর আরও প্রভাব পড়তে পারে। অতি প্রয়োজন ছাড়া এই ঋণ নিবেন না।",
+            adv_agriculture: "মাঝারি ঝুঁকি (৪০%): কৃষি কাজে প্রাকৃতিক ঝুঁকি থাকে। নিশ্চিত করুন যে আবহাওয়া বা ফসলের ক্ষতি হলেও কিস্তি দেওয়ার বিকল্প পথ আপনার কাছে আছে।",
+            adv_education: "মাঝারি ঝুঁকি (৩০%): শিক্ষার জন্য ঋণ ভালো বিনিয়োগ, তবে এর ফল পেতে সময় লাগে। কিস্তি যেন আপনার বর্তমান দৈনন্দিন পড়াশোনার খরচ ও জীবনযাত্রাকে ব্যাহত না করে।",
+            adv_medical: "জরুরী কিন্তু ঝুঁকিপূর্ণ (৫০%): চিকিৎসা জীবনের চেয়ে বড় নয়, তবে সুস্থ হওয়ার পর এই কিস্তি একটি দীর্ঘমেয়াদী বোঝা হয়ে দাঁড়ায়। দ্রুত সুস্থ হয়ে পুনরায় আয় শুরু করার উপর জোর দিন।",
+            adv_emergency: "উচ্চ ঝুঁকি (৬০%): জরুরী অবস্থার ঋণগুলো সাধারণত পূর্বপরিকল্পনাহীন হয়। কিস্তি পরিশোধের জন্য আপনার নিয়মিত আয়ের বাইরে বিকল্প কোনো আয়ের উৎস আছে কিনা ভেবে দেখুন।",
+            adv_business: "কম ঝুঁকি (২০%): ব্যবসার আয়ের জন্য ঋণ নেওয়া সবচেয়ে ভালো। তবে নিশ্চিত করুন যে ব্যবসার মাসিক মুনাফা আপনার কিস্তির টাকার চেয়ে উল্লেখযোগ্যভাবে বেশি হবে।",
+            adv_event: "অত্যন্ত বিপজ্জনক (৯৫%): বিয়ে বা সামাজিক অনুষ্ঠানের জন্য ঋণ নেওয়া সম্পূর্ণ অনুৎপাদনশীল খাত। এটি আপনার আয় এক টাকাও বাড়াবে না, বরং কিস্তির চাপে আপনাকে পথে বসাতে পারে।",
+            adv_travel: "অত্যন্ত বিপজ্জনক (১০০%): ভ্রমণ একটি বিলাসবহুল ব্যয়। ঋণ করে ভ্রমণ করা আর্থিক ভবিষ্যৎ সম্পূর্ণ ধ্বংস করতে পারে। এটি পরিহার করুন।",
+            adv_social: "অত্যন্ত বিপজ্জনক (৯০%): সামাজিক সম্মান রক্ষার্থে ঋণ নিলে কিস্তি দেওয়া কঠিন হতে পারে। সম্মান বজায় রাখতে গিয়ে দীর্ঘমেয়াদী ঋণের ফাঁদে পড়া বুদ্ধিমানের কাজ নয়।",
+            adv_repair: "মাঝারি ঝুঁকি (৩৫%): ঘর বা ব্যবসা মেরামতে ঋণ আয়ের নিরাপত্তা দেয়। তবে মেরামতের খরচ কিস্তির থেকে কতটুকু লাভজনক তা হিসাব করা প্রয়োজন।",
+            adv_pay_debt: "সর্বোচ্চ বিপদ (১০০%): এক ঋণ শোধ করতে বেশি সুদে আরেকটি ঋণ নেওয়া হলো ঋণের ফাঁদ বা ডেট-ট্র্যাপ এর নিখুঁত উদাহরণ। এটি থেকে বের হওয়া প্রায় অসম্ভব।",
+            adv_other: "উচ্চ সতর্কতা (৭০%): অজানা বা অপ্রয়োজনীয় খাতে ঋণ অত্যন্ত ঝুঁকিপূর্ণ। নিশ্চিত করুন এই টাকা এমন কিছুতে ব্যয় হচ্ছে যা আপনাকে আর্থিকভাবে লাভবান করবে।",
             
             cash_received: "নগদ গ্রহণ",
             monthly_income: "পরিবারের মাসিক আয়",
@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             final_eval: "চূড়ান্ত মূল্যায়ন",
             eval_tolerable: "সহনশীল কিস্তি",
             eval_tolerable_sub: "এই কিস্তি আপনার আয়ের সাথে সামঞ্জস্যপূর্ণ।",
+            eval_caution: "সতর্কতামূলক কিস্তি",
+            eval_caution_sub: "এই কিস্তি চালানো শুরু করলে আপনার অন্যান্য খরচ কমাতে হবে।",
             eval_risky: "ঝুঁকিপূর্ণ কিস্তি",
             eval_risky_sub: "এই কিস্তি দেওয়া আপনার জন্য কষ্টকর হতে পারে।",
             eval_danger: "বিপজ্জনক কিস্তি",
@@ -70,8 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
             eval_basis: "আপনার আয় এবং মোট পরিশোধের টাকার ভিত্তিতে।",
             
             hidden_calc: "লুকানো হিসাব (মুদ্রাস্ফীতি)",
-            hidden_calc_sub: "মুদ্রাস্ফীতির হিসাব দেখুন",
-            hidden_calc_content: "মুদ্রাস্ফীতির কারণে আপনার ঋণের আসল বোঝা কতটুকু কমছে। সাধারণ ৩-৫% মুদ্রাস্ফীতি থাকলে আপনার আসল ঋণের মান সময়ের সাথে কমে যায়, কিন্তু এনজিও সাধারণত বেশি সুদ নেয় যা এটি পুষিয়ে দেয়।"
+            hidden_calc_sub: "মুদ্রাস্ফীতির আসল প্রভাব দেখুন",
+            hidden_calc_content: "মুদ্রাস্ফীতির কারণে মূলত জিনিসের দাম বাড়ে। ঋণে এটি কেন ক্ষতিকর তা নিচে দেওয়া হলো:",
+            inf_fixed_title: "নির্দিষ্ট আয়ের চাকরিজীবী:",
+            inf_fixed_desc: "চাকরিজীবীদের জন্য মুদ্রাস্ফীতি সবচেয়ে ক্ষতিকর। জিনিসপত্রের দাম প্রতিদিন বাড়ে, কিন্তু বেতন বাড়ে বছরে একবার ও বাড়ে না। ফলে কিস্তির টাকা পাহাড় সমান মনে হয় এবং দৈনন্দিন বাজার খরচ চালানো অসম্ভব হয়ে পড়ে। ঋণের চেয়ে ব্যয় কমানোর দিকে নজর দিন।",
+            inf_biz_title: "ব্যবসায়ী:",
+            inf_biz_desc: "ব্যবসায়ীরা মুদ্রাস্ফীতির সময় পণ্যের দাম বাড়িয়ে কিছুটা টিকে থাকতে পারেন। তবে ক্রেতার ক্রয়ক্ষমতা কমে গেলে ব্যবসাও ক্ষতির মুখে পড়ে। তাই ঋণের টাকায় ব্যবসা করতে হলে নিশ্চিত হতে হবে মুনাফার হার কিস্তির চেয়ে অনেক বেশি।"
         },
         en: {
             app_title: "Installment & Market Check",
@@ -95,18 +101,18 @@ document.addEventListener('DOMContentLoaded', () => {
             risk_level: "Risk Level",
             our_advice: "Our Advice",
             
-            adv_market: "Absolutely Necessary: Food is life-saving. Try your best to manage the installment.",
-            adv_agriculture: "Income Generating: Agriculture has risks. Ensure crop yields can cover the installments.",
-            adv_education: "Long Term: Good investment, but ensure it doesn't hurt daily living expenses.",
-            adv_medical: "Highly Urgent: No alternative to health. Focus on recovering and earning.",
-            adv_emergency: "Emergency: Think of alternate income sources to cover this immediate burden.",
-            adv_business: "Income Generating: Good choice ONLY if business profits exceed the installment.",
-            adv_event: "Risky: Loans for non-productive events can lead to debt traps without increasing income.",
-            adv_travel: "Dangerous: Travel is a luxury expense. Taking a loan for travel can severely damage your financial future.",
-            adv_social: "Risky: Taking loans for social prestige often leads to severe trap later.",
-            adv_repair: "Necessary: Repairing home or shop secures your future foundation.",
-            adv_pay_debt: "Dangerous: Taking a new loan to pay off an old one frequently leads to a severe debt cycle.",
-            adv_other: "Warning: Loans for undefined purposes are highly risky. Ensure it generates more income than the installment.",
+            adv_market: "High Risk (80%): Taking a loan for daily groceries is a dangerous red flag. It means your basic living expenses exceed your regular income. Paying this back will only reduce your future food budget further. Avoid if possible.",
+            adv_agriculture: "Moderate Risk (40%): Agriculture relies on weather and market elements. Ensure you have backup funds or alternative ways to pay the installment if a crop completely fails.",
+            adv_education: "Moderate Risk (30%): A good long-term investment, but degrees take years to generate money. Make sure the heavy monthly installments do not crush your daily living standards today.",
+            adv_medical: "Urgent but Risky (50%): Without health, there is nothing. However, remember this installment will become a brutal burden once you heal. Prioritize returning to work to cover these costs.",
+            adv_emergency: "High Risk (60%): Unplanned loans for sudden emergencies are stressful. You must immediately calculate how to squeeze this new, heavy installment out of your current strict budget.",
+            adv_business: "Low Risk (20%): Productive debt is the smartest choice. But mathematically ensure your expected business profit will consistently be much higher than your installment amount.",
+            adv_event: "Extremely Dangerous (95%): Loans for marriages or parties are completely non-productive. They do not increase your income by a single penny, leaving you in severe debt just for social prestige.",
+            adv_travel: "Extremely Dangerous (100%): Travel is a luxury. Financing a vacation with high-interest NGO loans is a guaranteed path to destroying your financial future. Strictly avoid.",
+            adv_social: "Extremely Dangerous (90%): Taking high-interest loans to maintain a 'status' in society is a huge mistake. The social prestige will fade, but the crushing debt trap will remain for years.",
+            adv_repair: "Moderate Risk (35%): Necessary for safety or business continuity. Just ensure the amount borrowed strictly matches the required repair material and isn't wasted.",
+            adv_pay_debt: "Maximum Danger (100%): Taking a new, high-interest loan to pay off an old loan is the literal definition of a 'Debt Trap'. You will almost never escape this cycle without a massive income spike.",
+            adv_other: "High Warning (70%): Loans for undefined purposes are universally risky. If this money is going toward consumer goods (like a TV or phone), it is a terrible financial decision.",
             
             cash_received: "Cash Received",
             monthly_income: "Family Monthly Income",
@@ -135,15 +141,21 @@ document.addEventListener('DOMContentLoaded', () => {
             final_eval: "Final Evaluation",
             eval_tolerable: "Tolerable Installment",
             eval_tolerable_sub: "This installment matches well with your income limit.",
+            eval_caution: "Cautionary Installment",
+            eval_caution_sub: "Paying this will require you to actively cut other expenses.",
             eval_risky: "Risky Installment",
             eval_risky_sub: "Paying this installment will likely be a struggle.",
             eval_danger: "Dangerous Installment",
             eval_danger_sub: "This installment is a severe threat to your daily survival.",
             eval_basis: "Based exclusively on your total income and repayment.",
             
-            hidden_calc: "Hidden Calculation (Inflation)",
-            hidden_calc_sub: "View inflation logic",
-            hidden_calc_content: "Inflation reduces the actual load of your debt over time. With standard 3-5% inflation, the real value of cash drops, but NGO interest rates usually outpace it anyway."
+            hidden_calc: "Hidden Math (Inflation)",
+            hidden_calc_sub: "See the real impact of inflation",
+            hidden_calc_content: "Inflation makes everything more expensive over time. Here is why taking a loan during high inflation is dangerous:",
+            inf_fixed_title: "Fixed Salary Earners:",
+            inf_fixed_desc: "Inflation is devastating for salary earners. The price of groceries and transport goes up daily, but your salary remains the exact same. This makes the static loan installment feel heavier every month, crushing your ability to survive. Focus on cutting expenses, not taking loans.",
+            inf_biz_title: "Business Owners:",
+            inf_biz_desc: "Businesses can sometimes survive inflation by raising their prices. However, if customers stop buying because they have no money, the business will fail entirely. A business loan is only safe if you are 100% sure your profit margins will outpace both the NGO interest and national inflation."
         }
     };
 
@@ -262,18 +274,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Purpose Buttons Select Logic
     const purposeBtns = document.querySelectorAll('.purpose-btn');
     const purposeScores = {
-        market: { score: "10%", pct: "10%", i18nKey: "adv_market" },
-        education: { score: "20%", pct: "20%", i18nKey: "adv_education" },
-        medical: { score: "10%", pct: "10%", i18nKey: "adv_medical" },
-        emergency: { score: "20%", pct: "20%", i18nKey: "adv_emergency" },
-        business: { score: "15%", pct: "15%", i18nKey: "adv_business" },
-        agriculture: { score: "30%", pct: "30%", i18nKey: "adv_agriculture" },
+        business: { score: "20%", pct: "20%", i18nKey: "adv_business" },
+        education: { score: "30%", pct: "30%", i18nKey: "adv_education" },
+        repair: { score: "35%", pct: "35%", i18nKey: "adv_repair" },
+        agriculture: { score: "40%", pct: "40%", i18nKey: "adv_agriculture" },
+        medical: { score: "50%", pct: "50%", i18nKey: "adv_medical" },
+        emergency: { score: "60%", pct: "60%", i18nKey: "adv_emergency" },
+        other: { score: "70%", pct: "70%", i18nKey: "adv_other" },
+        market: { score: "80%", pct: "80%", i18nKey: "adv_market" },
         social: { score: "90%", pct: "90%", i18nKey: "adv_social" },
         event: { score: "95%", pct: "95%", i18nKey: "adv_event" },
         travel: { score: "100%", pct: "100%", i18nKey: "adv_travel" },
-        repair: { score: "25%", pct: "25%", i18nKey: "adv_repair" },
-        pay_debt: { score: "100%", pct: "100%", i18nKey: "adv_pay_debt" },
-        other: { score: "50%", pct: "50%", i18nKey: "adv_other" }
+        pay_debt: { score: "100%", pct: "100%", i18nKey: "adv_pay_debt" }
     };
 
     purposeBtns.forEach(btn => {
@@ -343,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ngoRatioTextEl.innerText = ratioRounded + '%';
 
         // 5. Update Evaluation Box Design based on Ratio
-        if (ratioRounded <= 30) {
+        if (ratioRounded <= 20) {
             // Tolerable
             evalBoxEl.style.backgroundColor = 'var(--green-bg)';
             evalBoxEl.style.borderColor = 'var(--green-border)';
@@ -360,10 +372,28 @@ document.addEventListener('DOMContentLoaded', () => {
             evalSubheadingEl.innerText = i18n[currentLang].eval_tolerable_sub;
             
             ngoProgressEl.style.backgroundColor = 'var(--green-base)';
+        } else if (ratioRounded <= 30) {
+            // Caution
+            evalBoxEl.style.backgroundColor = 'var(--orange-bg)';
+            evalBoxEl.style.borderColor = 'var(--orange-border)';
+            evalIconCircleEl.style.color = 'var(--orange-base)';
+            evalHeadingEl.style.color = 'var(--orange-base)';
+            evalSubheadingEl.style.color = 'var(--orange-base)';
+            
+            evalIconEl.className = 'fa-solid fa-triangle-exclamation';
+            
+            evalHeadingEl.setAttribute('data-i18n', 'eval_caution');
+            evalHeadingEl.innerText = i18n[currentLang].eval_caution;
+            
+            evalSubheadingEl.setAttribute('data-i18n', 'eval_caution_sub');
+            evalSubheadingEl.innerText = i18n[currentLang].eval_caution_sub;
+
+            ngoProgressEl.style.backgroundColor = 'var(--orange-base)';
         } else if (ratioRounded <= 50) {
             // Risky
             evalBoxEl.style.backgroundColor = 'var(--orange-bg)';
             evalBoxEl.style.borderColor = 'var(--orange-border)';
+            // Make risky slightly darker/redder if desired, but we'll use orange base and icon difference
             evalIconCircleEl.style.color = 'var(--orange-base)';
             evalHeadingEl.style.color = 'var(--orange-base)';
             evalSubheadingEl.style.color = 'var(--orange-base)';
@@ -399,7 +429,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Attach listeners
     [monthlyIncomeEl, installmentInputEl, installmentCountEl, frequencyEl].forEach(input => {
-        input.addEventListener('input', calculate);
+        // Calculate when user presses 'Enter'
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                calculate();
+                input.blur(); // Hide keyboard on mobile
+            }
+        });
+        // Also calculate when user finishes editing and clicks away
         input.addEventListener('change', calculate);
     });
 

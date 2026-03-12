@@ -62,36 +62,47 @@ The application evaluates whether the loan is safe or dangerous based on the **D
 
 ### Conditions (শর্তসমূহ):
 
-*   🟢 **Tolerable (সহনশীল): Ratio ≤ 30%**
-    *   **Logic:** The installment takes up 30% or less of the monthly income. 
-    *   **Meaning:** This is considered globally safe. The user will likely not starve.
+*   🟢 **Tolerable (সহনশীল): Ratio ≤ 20%**
+    *   **Logic:** The installment takes up 20% or less of the monthly income. 
+    *   **Meaning:** This is considered globally safe. The user will be able to manage this comfortably.
+*   🟠 **Cautionary (সতর্কতামূলক): Ratio 21% - 30%**
+    *   **Logic:** The installment takes up between 21% and 30% of the monthly income.
+    *   **Meaning:** The user will need to actively cut other expenses to afford this safely.
 *   🟠 **Risky (ঝুঁকিপূর্ণ): Ratio 31% - 50%**
     *   **Logic:** The installment takes up between 31% and 50% of the monthly income.
-    *   **Meaning:** The user will struggle. Market price hikes on essential goods will cause severe distress.
+    *   **Meaning:** The user will struggle heavily. Market price hikes on essential goods will cause severe distress.
 *   🔴 **Dangerous (বিপজ্জনক): Ratio > 50%**
     *   **Logic:** The installment consumes more than half of the user's monthly income.
-    *   **Meaning:** This is a debt trap. The user cannot survive without taking another loan to pay off this one.
+    *   **Meaning:** This is a guaranteed debt trap. The user cannot survive without taking another loan to pay off this one.
 
 ---
 
 ## 5. Loan Purpose Risk (ঋণের উদ্দেশ্যের ঝুঁকি)
 
-Different loan reasons carry different inherent risks, independent of the math. The application assigns a base risk percentage to the purpose of the loan:
+Different loan reasons carry different inherent risks. The application assigns a base risk percentage to the purpose of the loan, aiming for a highly conservative model that discourages taking high-interest loans for anything other than absolute necessities or guaranteed income-generating assets:
 
-*   **Market/Medical/Agriculture (বাজার/চিকিৎসা/কৃষি): 10% - 30% Risk**
-    *   *Reasoning:* Essential survival needs or income-generating activities.
-*   **Education/Emergency (শিক্ষা/জরুরী): 20% Risk**
-    *   *Reasoning:* Important long-term investments or unavoidable circumstances.
-*   **Repair/Business (মেরামত/ব্যবসা): 15% - 25% Risk**
-    *   *Reasoning:* Good if the business profits exceed the installment, but carries a moderate risk of failure.
-*   **Other (অন্যান্য): 50% Risk**
-    *   *Reasoning:* Loans for undefined purposes carry high general risk. They require careful review to ensure they generate more income than the installment.
-*   **Social/Event/Marriage (সামাজিক/বিয়ে/অনুষ্ঠান): 90% - 95% Risk**
-    *   *Reasoning:* Highly dangerous. Non-productive debt taken for prestige.
-*   **Travel (ভ্রমণ): 100% Risk**
-    *   *Reasoning:* Absolutely dangerous. Travel is a luxury expense and does not generate income, leading to severe financial distress.
-*   **Paying Old Debt (পুরোনো ঋণ শোধ): 100% Risk**
-    *   *Reasoning:* The definition of a severe debt cycle/trap. Guaranteed disaster without massive income increases.
+*   **Business (ব্যবসা): 20% Risk (Low)**
+    *   *Reasoning:* Productive debt. Good if the business profits consistently exceed the installment.
+*   **Education (শিক্ষা): 30% Risk (Moderate)**
+    *   *Reasoning:* Good long-term investment, but degrees take years to generate money. Causes short-term strain.
+*   **Repair (মেরামত): 35% Risk (Moderate)**
+    *   *Reasoning:* Necessary for safety or business continuity, but strict budgeting is needed.
+*   **Agriculture (কৃষি): 40% Risk (Moderate)**
+    *   *Reasoning:* Income-generating but highly reliant on uncontrollable factors like weather.
+*   **Medical (চিকিৎসা): 50% Risk (Urgent but Risky)**
+    *   *Reasoning:* No alternative to health, but paying the installment becomes a brutal burden during recovery.
+*   **Emergency (জরুরী): 60% Risk (High)**
+    *   *Reasoning:* Unplanned loans without alternate income sources stretch strict budgets to their breaking points.
+*   **Other (অন্যান্য): 70% Risk (High Warning)**
+    *   *Reasoning:* Loans for undefined purposes or consumer goods are universally terrible financial decisions.
+*   **Market/Grocery (বাজার): 80% Risk (High Warning)**
+    *   *Reasoning:* Taking a loan for daily consumables is a massive red flag. It means daily expenses have exceeded income, and paying this back will reduce future food budgets further.
+*   **Social/Event/Marriage (সামাজিক/বিয়ে/অনুষ্ঠান): 90% - 95% Risk (Extremely Dangerous)**
+    *   *Reasoning:* Completely non-productive debt taken merely for social prestige. It generates zero income.
+*   **Travel (ভ্রমণ): 100% Risk (Extremely Dangerous)**
+    *   *Reasoning:* Financing a luxury vacation with a high-interest NGO loan guarantees financial destruction.
+*   **Paying Old Debt (পুরোনো ঋণ শোধ): 100% Risk (Maximum Danger)**
+    *   *Reasoning:* The literal definition of a severe 'Debt Cycle' or 'Debt Trap'.
 
 ***
 
