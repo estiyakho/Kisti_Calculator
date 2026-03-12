@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             p_agriculture: "কৃষি",
             p_social: "সামাজিক",
             p_event: "বিয়ে/অনুষ্ঠান",
+            p_travel: "ভ্রমণ",
             p_repair: "মেরামত",
             p_pay_debt: "পুরোনো ঋণ",
+            p_other: "অন্যান্য",
             risk_level: "ঝুঁকির মাত্রা",
             our_advice: "আমাদের পরামর্শ",
             
@@ -28,9 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
             adv_emergency: "জরুরী অবস্থা: কিস্তি পরিশোধের জন্য বিকল্প আয়ের উৎস ভেবে রাখুন।",
             adv_business: "আয়বর্ধক: ব্যবসার আয় কিস্তির চেয়ে বেশি হলে এটি ভালো সিদ্ধান্ত।",
             adv_event: "ঝুঁকিপূর্ণ: অনুৎপাদনশীল খাতে ঋণ নেওয়া বিপদের কারণ হতে পারে। আয় না বাড়লে কিস্তি দেওয়া কঠিন।",
+            adv_travel: "বিপজ্জনক: ভ্রমণ একটি বিলাসবহুল ব্যয়। ঋণ করে ভ্রমণ করা আর্থিক ভবিষ্যৎ নষ্ট করতে পারে।",
             adv_social: "ঝুঁকিপূর্ণ: সামাজিক সম্মান রক্ষার্থে ঋণ নিলে কিস্তি দেওয়া কঠিন হতে পারে।",
             adv_repair: "প্রয়োজনীয়: ঘর বা ব্যবসা মেরামতে ঋণ আয়ের নিরাপত্তা দেয়।",
             adv_pay_debt: "বিপজ্জনক: এক ঋণ শোধ করতে আরেক ঋণ নিলে ঋণের ফাঁদে পড়ার সম্ভাবনা বেশি।",
+            adv_other: "সতর্কতা: অজানা খাতে ঋণ অনেক ঝুঁকিপূর্ণ হতে পারে। নিশ্চিত করুন এর আয় কিস্তির চেয়ে বেশি হবে।",
             
             cash_received: "নগদ গ্রহণ",
             monthly_income: "পরিবারের মাসিক আয়",
@@ -40,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             freq_weekly: "সাপ্তাহিক",
             freq_monthly: "মাসিক",
             total_repayment: "মোট পরিশোধ",
+            total_repayment_full: "সম্পূর্ণ পরিশোধ",
             
             your_installment: "আপনার কিস্তি",
             per_week: "প্রতি সপ্তাহ",
@@ -83,8 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
             p_agriculture: "Agriculture",
             p_social: "Social",
             p_event: "Event/Marriage",
+            p_travel: "Travel",
             p_repair: "Repair",
             p_pay_debt: "Old Debt",
+            p_other: "Other",
             risk_level: "Risk Level",
             our_advice: "Our Advice",
             
@@ -95,9 +102,11 @@ document.addEventListener('DOMContentLoaded', () => {
             adv_emergency: "Emergency: Think of alternate income sources to cover this immediate burden.",
             adv_business: "Income Generating: Good choice ONLY if business profits exceed the installment.",
             adv_event: "Risky: Loans for non-productive events can lead to debt traps without increasing income.",
+            adv_travel: "Dangerous: Travel is a luxury expense. Taking a loan for travel can severely damage your financial future.",
             adv_social: "Risky: Taking loans for social prestige often leads to severe trap later.",
             adv_repair: "Necessary: Repairing home or shop secures your future foundation.",
             adv_pay_debt: "Dangerous: Taking a new loan to pay off an old one frequently leads to a severe debt cycle.",
+            adv_other: "Warning: Loans for undefined purposes are highly risky. Ensure it generates more income than the installment.",
             
             cash_received: "Cash Received",
             monthly_income: "Family Monthly Income",
@@ -107,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             freq_weekly: "Weekly",
             freq_monthly: "Monthly",
             total_repayment: "Total Repayment",
+            total_repayment_full: "Full Repayment",
             
             your_installment: "Your Installment",
             per_week: "Per Week",
@@ -144,12 +154,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inputs
     const monthlyIncomeEl = document.getElementById('monthly_income');
-    const totalRepaymentEl = document.getElementById('total_repayment');
+    const installmentInputEl = document.getElementById('installment_input');
     const installmentCountEl = document.getElementById('installment_count');
     const frequencyEl = document.getElementById('frequency');
 
     // Outputs
-    const installmentAmtEl = document.getElementById('installment_amount');
+    const totalRepaymentDisplayEl = document.getElementById('total_repayment_display');
     const frequencyTextEl = document.getElementById('installment_frequency_text');
     const dailyLossEl = document.getElementById('daily_loss');
     const remainingAmtEl = document.getElementById('remaining_amount');
@@ -260,8 +270,10 @@ document.addEventListener('DOMContentLoaded', () => {
         agriculture: { score: "30%", pct: "30%", i18nKey: "adv_agriculture" },
         social: { score: "90%", pct: "90%", i18nKey: "adv_social" },
         event: { score: "95%", pct: "95%", i18nKey: "adv_event" },
+        travel: { score: "100%", pct: "100%", i18nKey: "adv_travel" },
         repair: { score: "25%", pct: "25%", i18nKey: "adv_repair" },
-        pay_debt: { score: "100%", pct: "100%", i18nKey: "adv_pay_debt" }
+        pay_debt: { score: "100%", pct: "100%", i18nKey: "adv_pay_debt" },
+        other: { score: "50%", pct: "50%", i18nKey: "adv_other" }
     };
 
     purposeBtns.forEach(btn => {
@@ -287,28 +299,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Main Calculator Logic
     function calculate() {
         const income = parseFloat(monthlyIncomeEl.value) || 0;
-        const repayment = parseFloat(totalRepaymentEl.value) || 0;
+        const installmentInput = parseFloat(installmentInputEl.value) || 0;
         const count = parseFloat(installmentCountEl.value) || 1;
         const freq = frequencyEl.value;
 
         if (count === 0) return;
 
-        // 1. Calculate installment amount
-        const installment = repayment / count;
+        // 1. Calculate total repayment amount
+        const totalRepayment = installmentInput * count;
 
         // 2. Convert to monthly for comparison
         let monthlyInstallment = 0;
-        let freqI18nKey = '';
 
         if (freq === 'weekly') {
-            monthlyInstallment = installment * 4.33; 
-            freqI18nKey = 'per_week';
+            monthlyInstallment = installmentInput * 4.33; 
         } else if (freq === 'monthly') {
-            monthlyInstallment = installment;
-            freqI18nKey = 'per_month';
+            monthlyInstallment = installmentInput;
         } else if (freq === 'daily') {
-            monthlyInstallment = installment * 30;
-            freqI18nKey = 'per_day';
+            monthlyInstallment = installmentInput * 30;
         }
 
         // 3. Calculate metrics
@@ -321,11 +329,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 4. Update DOM Outputs
-        installmentAmtEl.innerText = formatMoney(installment);
+        totalRepaymentDisplayEl.innerText = formatMoney(totalRepayment);
         
         // Re-apply localization for Frequency
-        frequencyTextEl.setAttribute('data-i18n', freqI18nKey);
-        frequencyTextEl.innerText = i18n[currentLang][freqI18nKey];
+        frequencyTextEl.setAttribute('data-i18n', 'total_repayment_full');
+        frequencyTextEl.innerText = i18n[currentLang]['total_repayment_full'];
         
         dailyLossEl.innerText = formatMoney(dailyLoss);
         remainingAmtEl.innerText = formatMoney(remaining);
@@ -390,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Attach listeners
-    [monthlyIncomeEl, totalRepaymentEl, installmentCountEl, frequencyEl].forEach(input => {
+    [monthlyIncomeEl, installmentInputEl, installmentCountEl, frequencyEl].forEach(input => {
         input.addEventListener('input', calculate);
         input.addEventListener('change', calculate);
     });

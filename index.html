@@ -50,8 +50,10 @@
                     <button class="purpose-btn" data-purpose="agriculture"><i class="fa-solid fa-tractor"></i> <span data-i18n="p_agriculture">কৃষি</span></button>
                     <button class="purpose-btn" data-purpose="social"><i class="fa-solid fa-heart"></i> <span data-i18n="p_social">সামাজিক</span></button>
                     <button class="purpose-btn" data-purpose="event"><i class="fa-solid fa-cake-candles"></i> <span data-i18n="p_event">বিয়ে/অনুষ্ঠান</span></button>
+                    <button class="purpose-btn" data-purpose="travel"><i class="fa-solid fa-plane"></i> <span data-i18n="p_travel">ভ্রমণ</span></button>
                     <button class="purpose-btn" data-purpose="repair"><i class="fa-solid fa-hammer"></i> <span data-i18n="p_repair">মেরামত</span></button>
                     <button class="purpose-btn" data-purpose="pay_debt"><i class="fa-solid fa-money-bill-transfer"></i> <span data-i18n="p_pay_debt">পুরোনো ঋণ</span></button>
+                    <button class="purpose-btn" data-purpose="other"><i class="fa-solid fa-ellipsis"></i> <span data-i18n="p_other">অন্যান্য</span></button>
                 </div>
             </div>
 
@@ -107,10 +109,10 @@
 
                 <!-- Group 3 -->
                 <div class="input-group full-width">
-                    <label data-i18n="total_repayment">মোট পরিশোধ</label>
+                    <label data-i18n="your_installment">আপনার কিস্তি</label>
                     <div class="input-wrapper">
                         <span class="currency-symbol">৳</span>
-                        <input type="number" id="total_repayment" value="34500" placeholder="0" min="0">
+                        <input type="number" id="installment_input" value="750" placeholder="0" min="0">
                     </div>
                 </div>
             </div>
@@ -120,13 +122,13 @@
                 <!-- Card 1 -->
                 <div class="result-card">
                     <div class="result-header">
-                        <span class="result-label" data-i18n="your_installment">আপনার কিস্তি</span>
-                        <i class="fa-regular fa-calendar result-icon"></i>
+                        <span class="result-label" data-i18n="total_repayment">মোট পরিশোধ</span>
+                        <i class="fa-regular fa-money-bill-1 result-icon"></i>
                     </div>
                     <div class="result-value">
-                        <span id="installment_amount">৳750</span>
+                        <span id="total_repayment_display">৳34,500</span>
                     </div>
-                    <div class="result-subtext" id="installment_frequency_text" data-i18n="per_week">প্রতি সপ্তাহ</div>
+                    <div class="result-subtext" id="installment_frequency_text" data-i18n="total_repayment_full">সম্পূর্ণ পরিশোধ</div>
 
                     <div class="daily-loss-box">
                         <i class="fa-solid fa-basket-shopping text-red"></i>

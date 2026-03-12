@@ -7,18 +7,18 @@ This document explains the mathematical formulas and logical conditions used beh
 
 ---
 
-## 1. Installment Calculation (কিস্তির পরিমাণ নির্ণয়)
+## 1. Total Repayment Calculation (মোট পরিশোধ নির্ণয়)
 
-The core formula determines how much the user has to pay per installment regardless of frequency.
+The core formula determines the total expected cost by multiplying the user's base installment by the duration count.
 
 **Formula / সূত্র:**
-`Installment Amount = Total Repayment ÷ Number of Installments`
-`কিস্তির পরিমাণ = মোট পরিশোধ ÷ কিস্তির সংখ্যা`
+`Total Repayment = Installment Amount × Number of Installments`
+`মোট পরিশোধ = কিস্তির পরিমাণ × কিস্তির সংখ্যা`
 
 *Example (উদাহরণ):*
-Total Repayment = 34,500 
+Installment Amount = 750 
 Installment Count = 46 
-`34,500 / 46 = 750 per installment`
+`750 × 46 = 34,500 Total Repayment`
 
 ---
 
@@ -84,8 +84,12 @@ Different loan reasons carry different inherent risks, independent of the math. 
     *   *Reasoning:* Important long-term investments or unavoidable circumstances.
 *   **Repair/Business (মেরামত/ব্যবসা): 15% - 25% Risk**
     *   *Reasoning:* Good if the business profits exceed the installment, but carries a moderate risk of failure.
-*   **Social/Event/Marriage (সামাজিক/বিয়ে): 90% - 95% Risk**
+*   **Other (অন্যান্য): 50% Risk**
+    *   *Reasoning:* Loans for undefined purposes carry high general risk. They require careful review to ensure they generate more income than the installment.
+*   **Social/Event/Marriage (সামাজিক/বিয়ে/অনুষ্ঠান): 90% - 95% Risk**
     *   *Reasoning:* Highly dangerous. Non-productive debt taken for prestige.
+*   **Travel (ভ্রমণ): 100% Risk**
+    *   *Reasoning:* Absolutely dangerous. Travel is a luxury expense and does not generate income, leading to severe financial distress.
 *   **Paying Old Debt (পুরোনো ঋণ শোধ): 100% Risk**
     *   *Reasoning:* The definition of a severe debt cycle/trap. Guaranteed disaster without massive income increases.
 
